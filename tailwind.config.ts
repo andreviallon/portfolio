@@ -13,6 +13,17 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        primary: "hsl(var(--primary) / <alpha-value>)",
+        secondary: "hsl(var(--secondary) / <alpha-value>)",
+        background: "hsl(var(--background) / <alpha-value>)",
+        accent: {
+          300: "hsl(var(--accent-300) / <alpha-value>)",
+          400: "hsl(var(--accent-400) / <alpha-value>)",
+          500: "hsl(var(--accent-500) / <alpha-value>)",
+          600: "hsl(var(--accent-600) / <alpha-value>)",
+        },
+      },
     },
   },
   plugins: [],
