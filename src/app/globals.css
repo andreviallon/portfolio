@@ -2,11 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "circular";
+  src: url(../static/fonts/CircularStd-Book.ttf);
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "circular";
+  src: url(../static/fonts/CircularStd-Medium.ttf);
+  font-style: medium;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "circular";
+  src: url(../static/fonts/CircularStd-Bold.ttf);
+  font-style: bold;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "circular";
+  src: url(../static/fonts/CircularStd-Black.ttf);
+  font-style: black;
+  font-weight: 900;
+}
+
 @layer base {
   :root {
     --primary: 0deg 0% 0%;
     --secondary: 220deg 9% 46%;
-    --background: 0deg 0% 100%;
+    --background: 220deg 14% 96%;
     --accent-300: 230deg 94% 82%;
     --accent-400: 234deg 89% 74%;
     --accent-500: 239deg 84% 67%;
@@ -21,5 +49,13 @@
     --accent-400: 234deg 89% 74%;
     --accent-500: 239deg 84% 67%;
     --accent-600: 243deg 75% 59%;
+  }
+
+  body {
+    font-family: "circular", sans-serif;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
