@@ -33,24 +33,33 @@ export const Anchor = ({
   );
 };
 
-const cvaAnchor = cva(["text-primary pointer font-medium transition-all transition-300 transition-ease-out"], {
-  variants: {
-    showBarOnHover: {
-      true: ["border-transparent border-b-2 hover:border-primary hover:pb-[2px]"],
-      false: [""],
+const cvaAnchor = cva(
+  [
+    "text-primary pointer font-medium transition-all transition-300 transition-ease-out",
+  ],
+  {
+    variants: {
+      showBarOnHover: {
+        true: [
+          "border-transparent border-b-2 hover:border-primary hover:pb-[2px]",
+        ],
+        false: [""],
+      },
+      hideBarOnHover: {
+        true: [
+          "border-primary border-b-2 hover:border-transparent hover:pb-[4px]",
+        ],
+        false: [""],
+      },
+      size: {
+        base: ["text-base"],
+        large: ["text-lg"],
+      },
     },
-    hideBarOnHover: {
-      true: ["border-primary border-b-2 hover:border-transparent hover:pb-[4px]"],
-      false: [""],
+    defaultVariants: {
+      showBarOnHover: false,
+      hideBarOnHover: false,
+      size: "base",
     },
-    size: {
-      base: ["text-base"],
-      large: ["text-lg"],
-    },
-  },
-  defaultVariants: {
-    showBarOnHover: false,
-    hideBarOnHover: false,
-    size: "base",
-  },
-});
+  }
+);
