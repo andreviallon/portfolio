@@ -7,7 +7,7 @@ import Projects from "../components/Projects";
 import About from "../components/About";
 import avatar from "../static/avatar_hero.jpg";
 import Head from "next/head";
-import { Slide, ToastContainer } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
