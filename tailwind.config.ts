@@ -17,6 +17,7 @@ const config: Config = {
         primary: "hsl(var(--primary) / <alpha-value>)",
         secondary: "hsl(var(--secondary) / <alpha-value>)",
         background: "hsl(var(--background) / <alpha-value>)",
+        "card-background": "hsl(var(--card-background) / <alpha-value>)",
         accent: {
           300: "hsl(var(--accent-300) / <alpha-value>)",
           400: "hsl(var(--accent-400) / <alpha-value>)",
